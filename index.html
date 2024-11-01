@@ -49,9 +49,9 @@
                     <div class="loading-spinner"></div>
                 </div>
                 <iframe id="frame1" id="googleDriveIframe"
-                    src="https://drive.google.com/file/d/18Zxp9rG7iq39dCC1W2MXAwLWUARer-iA/preview"
+                    src="https://drive.google.com/file/d/1Tw64eNh7O6UBEwgN-AN_i-FPBs3WC2MI/preview"
                     allow="autoplay" allowfullscreen></iframe>
-                <h3>Christmas Light Show 2023</h3>
+                <h3>Halloween Light Show 2024</h3>
             </div>
         </div>
         <br>
@@ -65,66 +65,62 @@
                 <div class="lo2">
                     <div class="loading-spinner"></div>
                 </div>
-                <iframe id="frame2" id="googleDriveIframe"
-                    src="https://drive.google.com/file/d/18As-vP8K7aODgxbwjyO2CkYCDhBP_En2/preview"
+                <iframe id="frame2"
+                    src="https://drive.google.com/file/d/18Zxp9rG7iq39dCC1W2MXAwLWUARer-iA/preview"
                     allow="autoplay" allowfullscreen></iframe>
-                <h3>Thanksgiving Light Show 2023</h3>
+                <h3>Christmas Light Show 2023</h3>
             </div>
             <div class="iframe-container">
                 <div class="lo3">
                     <div class="loading-spinner"></div>
                 </div>
-                <iframe id="frame3" src="https://drive.google.com/file/d/1MRijevhungCmO44cH30UnHLHb_xJN8jR/preview"
+                <iframe id="frame3"
+                    src="https://drive.google.com/file/d/18As-vP8K7aODgxbwjyO2CkYCDhBP_En2/preview"
                     allow="autoplay" allowfullscreen></iframe>
-                <h3>Halloween Light Show 2023</h3>
+                <h3>Thanksgiving Light Show 2023</h3>
             </div>
             <div class="iframe-container">
                 <div class="lo4">
                     <div class="loading-spinner"></div>
                 </div>
-                <iframe id="frame4" src="https://drive.google.com/file/d/1T7asFpYp7KA9mVT110zaDKl7EvbY8L4P/preview"
+                <iframe id="frame4" src="https://drive.google.com/file/d/1MRijevhungCmO44cH30UnHLHb_xJN8jR/preview"
                     allow="autoplay" allowfullscreen></iframe>
-                <h3>Halloween Light Show 2022</h3>
+                <h3>Halloween Light Show 2023</h3>
             </div>
             <div class="iframe-container">
                 <div class="lo5">
                     <div class="loading-spinner"></div>
                 </div>
-                <iframe id="frame5" src="https://drive.google.com/file/d/19fuabGnEwVjAyF-W5a5O9iJ6PaCkTp1M/preview"
+                <iframe id="frame5" src="https://drive.google.com/file/d/1T7asFpYp7KA9mVT110zaDKl7EvbY8L4P/preview"
                     allow="autoplay" allowfullscreen></iframe>
-                <h3>4th of July Light Show 2022</h3>
+                <h3>Halloween Light Show 2022</h3>
             </div>
             <div class="iframe-container">
                 <div class="lo6">
                     <div class="loading-spinner"></div>
                 </div>
-                <iframe id="frame6" src="https://drive.google.com/file/d/1wybCD5a0ABOLTQDHQe_-iSa0_EVGEYZM/preview"
+                <iframe id="frame6" src="https://drive.google.com/file/d/19fuabGnEwVjAyF-W5a5O9iJ6PaCkTp1M/preview"
+                    allow="autoplay" allowfullscreen></iframe>
+                <h3>4th of July Light Show 2022</h3>
+            </div>
+            <div class="iframe-container">
+                <div class="lo7">
+                    <div class="loading-spinner"></div>
+                </div>
+                <iframe id="frame7" src="https://drive.google.com/file/d/1wybCD5a0ABOLTQDHQe_-iSa0_EVGEYZM/preview"
                     allow="autoplay" allowfullscreen></iframe>
                 <h3>Christmas Light Show 2021</h3>
             </div>
         </div>
     </center>
     <script>
-        document.getElementById('frame1').onload = function () {
-            document.querySelector('.lo1').style.display = 'none';
-        };
-        document.getElementById('frame2').onload = function () {
-            document.querySelector('.lo2').style.display = 'none';
-        };
-        document.getElementById('frame3').onload = function () {
-            document.querySelector('.lo3').style.display = 'none';
-        };
-        document.getElementById('frame4').onload = function () {
-            document.querySelector('.lo4').style.display = 'none';
-        };
-        document.getElementById('frame5').onload = function () {
-            document.querySelector('.lo5').style.display = 'none';
-        };
-        document.getElementById('frame6').onload = function () {
-            document.querySelector('.lo6').style.display = 'none';
+
+        for (let i = 1; i < 7; i++) {
+            document.getElementById(`frame${i}`).onload = function () {
+                document.querySelector(`.lo${i}`).style.display = 'none';
+            };
         };
     </script>
-
 </body>
 
 </html>

@@ -122,12 +122,7 @@ h4 {
   z-index: 2;
 }
 
-.lo1,
-.lo2,
-.lo3,
-.lo4,
-.lo5,
-.lo6 {
+.lo {
   position: absolute;
   top: 0;
   left: 0;
